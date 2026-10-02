@@ -1,9 +1,11 @@
 # Development
 
-Use a fresh kernel per notebook and install only the required environment. Keep generated artifacts, local datasets, and credentials out of commits. Active notebook filenames describe their actual frameworks; TensorFlow VGG16 feature extraction is no longer filed under PyTorch.
+Use a fresh kernel and the environment documented by the notebook section. PyTorch and TensorFlow requirements are separate. The mixed CIFAR example needs both frameworks.
 
-The syntax check accepts IPython magic lines but does not execute training, downloads, or GPU code. Successful structural checks are not model benchmark validation. Adult Income has its own package, environment, and correctness checks under `projects/adult_income/`.
+```bash
+python scripts/check_notebooks.py
+python projects/object_detection/yolo/predict.py --help
+python projects/object_detection/yolo/train.py --help
+```
 
-From the collection root, run `cd projects/adult_income`, then `python -m unittest discover -s tests -v`.
-
-To add a project, provide a README with data requirements, install and run commands, artifact locations, and measured results. Add a source entry when migrating existing work. Preserve research repositories and their individual experiment records as separate projects.
+These commands check active source structure and CLI arguments. They do not install frameworks or perform GPU training and detector inference. Keep custom datasets, credentials, and generated checkpoints out of Git. Classical ML and Adult Income now belong in the separate Machine Learning collection.
