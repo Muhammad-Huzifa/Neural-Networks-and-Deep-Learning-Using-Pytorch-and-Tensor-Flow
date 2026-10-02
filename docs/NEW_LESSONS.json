@@ -1,0 +1,50 @@
+[
+  {
+    "path": "notebooks/01_neural_network_fundamentals/09_backpropagation_numpy.ipynb",
+    "title": "Backpropagation from scratch with a gradient check",
+    "runtime": "base",
+    "dataset": "Four generated XOR examples"
+  },
+  {
+    "path": "notebooks/02_frameworks/pytorch/07_training_evaluation_and_checkpoints.ipynb",
+    "title": "Training, evaluation, and portable checkpoints",
+    "runtime": "pytorch-cpu",
+    "dataset": "Built-in scikit-learn 8x8 digits"
+  },
+  {
+    "path": "notebooks/03_convolutional_networks/08_cnn_digits_cpu.ipynb",
+    "title": "A small convolutional classifier on CPU",
+    "runtime": "pytorch-cpu",
+    "dataset": "Built-in scikit-learn 8x8 digits"
+  },
+  {
+    "path": "notebooks/05_sequence_models/01_rnn_lstm_gru_sequence_classification.ipynb",
+    "title": "RNN, LSTM, and GRU sequence classification",
+    "runtime": "pytorch-cpu",
+    "dataset": "Generated independent increasing/decreasing signals"
+  },
+  {
+    "path": "notebooks/06_attention/01_scaled_dot_product_attention_numpy.ipynb",
+    "title": "Scaled dot-product attention and causal masking",
+    "runtime": "base",
+    "dataset": "Small generated query, key, and value matrices"
+  },
+  {
+    "path": "notebooks/06_attention/02_transformer_encoder_cpu.ipynb",
+    "title": "A small Transformer encoder on CPU",
+    "runtime": "pytorch-cpu",
+    "dataset": "Generated independent increasing/decreasing signals"
+  },
+  {
+    "path": "notebooks/07_object_detection/01_iou_and_non_max_suppression_numpy.ipynb",
+    "title": "Intersection over union and class-aware non-maximum suppression",
+    "runtime": "base",
+    "dataset": "Small handcrafted bounding boxes"
+  },
+  {
+    "path": "notebooks/08_representation_learning/01_autoencoder_digits_cpu.ipynb",
+    "title": "A small autoencoder for digit reconstruction",
+    "runtime": "pytorch-cpu",
+    "dataset": "Built-in scikit-learn 8x8 digits"
+  }
+]

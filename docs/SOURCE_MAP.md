@@ -34,6 +34,10 @@ This Deep Learning collection retains the neural-network, PyTorch/TensorFlow, CN
 | `Neural-Networks-and-Deep-Learning-Using-Pytorch-and-Tensor-Flow: Pytorch/Transfer Learning on Fashion Dataset using pytorch.ipynb` | Empty draft retained only in Git history | empty draft omitted |
 | `Neural-Networks-and-Deep-Learning-Using-Pytorch-and-Tensor-Flow: Pytorch/Transfer Learning_feature_Extraction .ipynb` | [notebooks/03_convolutional_networks/07_vgg16_feature_extraction_tf.ipynb](../notebooks/03_convolutional_networks/07_vgg16_feature_extraction_tf.ipynb) | migrated |
 
-The [Machine Learning collection](https://github.com/Muhammad-Huzifa/Machine_Learning) now maintains the seven classical lessons, original patient CSV, and the Adult Income project. Their copies were verified before removing these paths from this repository.
+The [Machine Learning collection](https://github.com/Muhammad-Huzifa/machine-learning) now maintains the seven classical lessons, original patient CSV, and the Adult Income project. Their copies were verified before removing these paths from this repository.
 
 The existing `ImageClassification.rar` stays at `data/archives/` with its original Git blob. The two incomplete drafts remain in `archive/incomplete/`; no training implementation is invented for them. Source identifiers are preserved here without relying on links to repositories that may later be deleted. Back up original source histories before retirement.
+
+## Original additions — 2 October 2026
+
+Eight self-contained lessons were newly authored for this collection to fill the curriculum gaps; they are not recovered source files or copied variants. The [lesson manifest](NEW_LESSONS.json) lists their paths, titles, runtime, and inputs. Original notebooks and project implementations were preserved during this expansion.
