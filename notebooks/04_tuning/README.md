@@ -1,8 +1,14 @@
-# 05 Tuning
+# Hyperparameter experiments
 
-Choose a notebook below and run it from a fresh kernel. Check the collection README for environment setup and `docs/DATASETS.md` for required inputs.
+Preserved original Optuna/neuron-count experiments. These use their original external inputs and full PyTorch environment.
 
-| Notebook |
-| --- |
-| [Optuna pytorch](01_optuna_pytorch.ipynb) |
-| [Neuron count comparison pytorch](02_neuron_count_comparison_pytorch.ipynb) |
+[Setup](../../README.md)
+
+| Notebook | Environment / input |
+| --- | --- |
+| [Hyperparameter tuning with Optuna](01_optuna_pytorch.ipynb) | Original lesson; see section environment and dataset guide |
+| [Hidden-neuron count comparison](02_neuron_count_comparison_pytorch.ipynb) | Original lesson; see section environment and dataset guide |
+
+Original lessons use `requirements/pytorch.txt`. The new checkpoint lesson needs base requirements and CPU PyTorch only.
+
+[Notebook catalog](../README.md) · [Dataset guide](../../docs/DATASETS.md)
