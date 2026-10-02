@@ -1,0 +1,6 @@
+-r base.txt
+torch>=2.4,<3
+torchvision>=0.19,<1
+torchinfo>=1.8,<2
+optuna>=3.6,<5
+kagglehub>=0.3,<1
