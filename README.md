@@ -1,178 +1,108 @@
-# 🧠 Neural Networks and Deep Learning using PyTorch & TensorFlow
+# Machine Learning and Deep Learning
 
-A comprehensive collection of **Artificial Neural Network (ANN)** and **Convolutional Neural Network (CNN)** implementations — built from scratch and using frameworks like **PyTorch** and **TensorFlow**.  
-This repository demonstrates how deep learning models are applied to **classification, regression, and image recognition** tasks using real-world datasets.
+A learning collection covering classical machine learning, neural-network fundamentals, PyTorch and TensorFlow experiments, image classification, tuning, and applied projects. The material is organized by topic rather than by its original repository.
 
----
+## Start here
 
-## 📘 Overview
+| Section | Material |
+| --- | --- |
+| [Machine learning](notebooks/01_machine_learning/README.md) | Linear, polynomial, logistic regression, and SVR |
+| [Neural network fundamentals](notebooks/02_neural_network_fundamentals/README.md) | Neurons, forward passes, dense classifiers, and MNIST |
+| [PyTorch](notebooks/03_frameworks/pytorch/README.md) | Tensors, autograd, nn.Module, datasets, and DataLoader |
+| [Deep learning](notebooks/04_deep_learning/README.md) | CNNs, CIFAR, LeNet, ResNet50, and VGG16 |
+| [Tuning](notebooks/05_tuning/README.md) | Optuna and neuron-count experiments |
+| [Adult Income project](projects/adult_income/README.md) | Train, evaluate, save, and serve a tabular model |
+| [Object detection](projects/object_detection/README.md) | Generic YOLO training and inference starter |
 
-This repository is designed for students, researchers, and developers aiming to **master core neural network concepts** and **apply deep learning models** to practical datasets.  
-It includes:
-- Fully working Jupyter notebooks
-- Hands-on projects on ANN, CNN, and Transfer Learning
-- Implementations using both **PyTorch** and **TensorFlow**
+The notebooks are original learning experiments with descriptive names, cleared outputs, and portable dataset paths. Some require external CSVs, custom images, or framework downloads. They are not all independently reproduced benchmark implementations; read [the input guide](docs/DATASETS.md) before running them. Incomplete experiments are kept in [the reference archive](archive/incomplete/README.md).
 
-The collection progresses from **simple neural networks** to **state-of-the-art architectures** like **LeNet-5, ResNet50, and Transfer Learning** on modern datasets.
+## Setup
 
----
+Use Python 3.11 or 3.12. For basic ML:
 
-## 🧩 Topics Covered
-
-| Category | Topics / Implementations |
-|-----------|--------------------------|
-| **Artificial Neural Networks (ANN)** | Regression, Classification, Optuna tuning, Real datasets |
-| **Deep Neural Networks (DNN)** | Multilayer perceptrons, Backpropagation, Hyperparameter tuning |
-| **Convolutional Neural Networks (CNN)** | CIFAR dataset, Custom datasets, Feature extraction |
-| **Transfer Learning** | ResNet50, Feature Extraction, Fine-tuning on custom datasets |
-| **PyTorch Experiments** | Dataset, DataLoader, nn.Module, forward/backward propagation |
-| **TensorFlow Models** | LeNet-5, MNIST classification |
-| **Optimization Techniques** | Adam, SGD, Optuna Hyperparameter Optimization |
-| **Real-world Data Applications** | Breast Cancer dataset, Fashion MNIST, Regression datasets |
-
----
-
-## 🧠 Key Features
-- Implementation of **ANNs, CNNs, and DNNs** from scratch and using frameworks.  
-- Experiments in **both PyTorch and TensorFlow**.  
-- Real dataset projects such as **Breast Cancer**, **Fashion MNIST**, and **Custom Image Datasets**.  
-- Demonstrations of **Transfer Learning** using **ResNet50**.  
-- **Hyperparameter tuning** using **Optuna**.  
-- Educational explanations and step-by-step implementations.
-
----
-
-## 🏗️ Projects Structure
-
-<details>
-<summary>Click to expand</summary>
-Neural-Networks-and-Deep-Learning-Using-Pytorch-and-Tensor-Flow/
-│
-├── ANN with Real DataSets/
-│ ├── Artifitial Neural_Network.ipynb
-│ ├── Regression_DataSet_Using_ANN.ipynb
-│ ├── Simple_Neural_Networks_MINST.ipynb
-│ ├── diabetes.csv
-│
-├── Deep Neural Networks/
-│ ├── CNN/
-│ │ ├── CIFAR Using CNN.ipynb
-│ │ ├── CNN-AlexNet with Real Dataset.ipynb
-│ │ ├── Convulutional Operationn on Matrix.ipynb
-│ │ ├── Penguin_Vs_Turtle_Classifaction(CNN).ipynb
-│ │ ├── Classification of Balls Cars and Cone using Resnet50.ipynb
-│ │
-│ ├── Deep_Nueral_Networks_SImple_DNNS.ipynb
-│ ├── Forward_Backward_prop_Pytorch.ipynb
-│ ├── Lenet_5 Using Tensor_flow.ipynb
-│
-├── Pytorch/
-│ ├── (nn)Module in Pytorch.ipynb
-│ ├── ANN_Breast_Cancer_DataSet_Using pytorch.ipynb
-│ ├── Data loader and dataset.ipynb
-│ ├── Dataset and Dataloader using Breast Cancer.ipynb
-│ ├── Fasion MNIST dataset using pytorch.ipynb
-│ ├── Hyperparameter Tuning using Optuna.ipynb
-│ ├── Real DataSet nnmodule().ipynb
-│ ├── Transfer Learning on Fashion Dataset using pytorch.ipynb
-│ ├── Transfer Learning_feature_Extraction .ipynb
-│
-├── requirements.txt
-└── README.md
-</details>
-
----
-
-## ⚙️ Installation
-
-### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Muhammad-Huzifa/Neural-Networks-and-Deep-Learning-Using-Pytorch-and-Tensor-Flow.git
 cd Neural-Networks-and-Deep-Learning-Using-Pytorch-and-Tensor-Flow
-python -m venv venv
-venv\Scripts\activate   # For Windows
-pip install -r requirements.txt
+python -m venv .venv
 ```
 
-🧪 Usage
+| Terminal | Activation command |
+| --- | --- |
+| Windows Command Prompt | `.venv\Scripts\activate.bat` |
+| Windows PowerShell | `.\.venv\Scripts\Activate.ps1` |
+| Windows Git Bash | `source .venv/Scripts/activate` |
+| Linux/macOS | `source .venv/bin/activate` |
 
-Open any notebook (.ipynb) in Jupyter Notebook or VS Code.
-
-Follow the notebook instructions for data preprocessing, model creation, and training.
-
-Modify network parameters or architectures to experiment with learning behavior.
-
-Evaluate models and visualize results interactively.
-
-| Project                              | Description                                                                |
-| ------------------------------------ | -------------------------------------------------------------------------- |
-| **ANN with Real Datasets**           | Implements regression and classification using artificial neural networks. |
-| **Penguin vs Turtle Classification** | CNN-based image classification of custom animal dataset.                   |
-| **CIFAR CNN**                        | Training a CNN from scratch on CIFAR-10 dataset.                           |
-| **ResNet50 Transfer Learning**       | Classification of multiple object categories using ResNet50.               |
-| **Breast Cancer Detection**          | Binary classification using ANN in PyTorch.                                |
-| **LeNet-5 in TensorFlow**            | Classic CNN architecture trained on MNIST.                                 |
-| **Optuna Hyperparameter Tuning**     | Automated search for optimal ANN configurations.                           |
-
-
-Tools & Libraries
-
-Programming Language: Python 3.8+
-
-Frameworks: PyTorch, TensorFlow, Keras
-
-Libraries: NumPy, Pandas, Matplotlib, Seaborn, OpenCV, Optuna, scikit-learn
-
-Environment: Jupyter Notebook / Google Colab
-
-
-💡 Learning Outcomes
-
-By exploring this repository, you will:
-
-Understand the mathematical and computational foundations of neural networks.
-
-Learn how to design, train, and evaluate models using PyTorch and TensorFlow.
-
-Explore Transfer Learning and feature extraction techniques.
-
-Gain practical skills in hyperparameter optimization and data handling.
-
-
-💫 Future Work
-
-Add Transformer-based architectures (ViT, BERT-like for vision)
-
-Implement GANs (Generative Adversarial Networks)
-
-Extend to object detection (YOLO, Faster-RCNN)
-
-Include more real-world datasets for medical and industrial use cases
-
-
-👨‍💻 Author
-
-Muhammad Huzifa
-🔗 GitHub Profile
-
-💬 Passionate about Deep Learning, AI Systems, and Computer Vision.
-
-🙏 Acknowledgements
-
-This repository is a compilation of projects created during the learning and exploration of Deep Learning fundamentals and modern architectures using PyTorch and TensorFlow.
-
-
----
-requirements.txt
-
-```text
-torch
-torchvision
-tensorflow
-numpy
-matplotlib
-pandas
-opencv-python
-optuna
-scikit-learn
+```bash
+python -m pip install -r requirements/base.txt
+jupyter lab
 ```
+
+Use separate environments for framework experiments:
+
+```bash
+python -m pip install -r requirements/pytorch.txt
+```
+
+or:
+
+```bash
+python -m pip install -r requirements/tensorflow.txt
+```
+
+Both files include the basic notebook tools. Install both only for mixed-framework examples. Full framework installations and GPU training depend on the platform and have not been verified by this migration.
+
+## Structure and resources
+
+| Path | Purpose |
+| --- | --- |
+| `notebooks/` | Topic-based lessons and section indexes |
+| `projects/` | Independent projects with their own environments and commands |
+| `requirements/` | Base, PyTorch, TensorFlow, and detection environments |
+| `data/` | Bundled source CSVs, original archive, and external-data instructions |
+| `artifacts/` | Ignored local model outputs |
+| `docs/` | Dataset guide, development notes, and migration source map |
+| `archive/incomplete/` | Explicitly unfinished original drafts |
+
+The collection keeps useful variants and removes identical source-cell duplicates. All original sources are traced in [SOURCE_MAP.md](docs/SOURCE_MAP.md). The suggested final repository name is `Machine-Learning-and-Deep-Learning`; clone commands currently use the existing GitHub name.
+
+## Notebook index
+
+| Notebook |
+| --- |
+| [Simple linear regression](notebooks/01_machine_learning/01_simple_linear_regression.ipynb) |
+| [Multiple linear regression](notebooks/01_machine_learning/02_multiple_linear_regression.ipynb) |
+| [Polynomial regression](notebooks/01_machine_learning/03_polynomial_regression.ipynb) |
+| [Logistic regression numpy](notebooks/01_machine_learning/04_logistic_regression_numpy.ipynb) |
+| [Logistic regression patient records](notebooks/01_machine_learning/05_logistic_regression_patient_records.ipynb) |
+| [Logistic regression titanic](notebooks/01_machine_learning/06_logistic_regression_titanic.ipynb) |
+| [Support vector regression](notebooks/01_machine_learning/07_support_vector_regression.ipynb) |
+| [Neurons and layers tf](notebooks/02_neural_network_fundamentals/01_neurons_and_layers_tf.ipynb) |
+| [Numpy tensorflow forward pass](notebooks/02_neural_network_fundamentals/02_numpy_tensorflow_forward_pass.ipynb) |
+| [Dense network tf](notebooks/02_neural_network_fundamentals/03_dense_network_tf.ipynb) |
+| [Ann classification tf](notebooks/02_neural_network_fundamentals/04_ann_classification_tf.ipynb) |
+| [Mnist ann intro tf](notebooks/02_neural_network_fundamentals/05_mnist_ann_intro_tf.ipynb) |
+| [Mnist ann tf](notebooks/02_neural_network_fundamentals/06_mnist_ann_tf.ipynb) |
+| [Diabetes classification tf](notebooks/02_neural_network_fundamentals/07_diabetes_classification_tf.ipynb) |
+| [Diabetes classification variant tf](notebooks/02_neural_network_fundamentals/08_diabetes_classification_variant_tf.ipynb) |
+| [Tensor operations](notebooks/03_frameworks/pytorch/00_tensor_operations.ipynb) |
+| [Nn module](notebooks/03_frameworks/pytorch/01_nn_module.ipynb) |
+| [Forward backward pass](notebooks/03_frameworks/pytorch/02_forward_backward_pass.ipynb) |
+| [Dataset and dataloader](notebooks/03_frameworks/pytorch/03_dataset_and_dataloader.ipynb) |
+| [Breast cancer dataloader](notebooks/03_frameworks/pytorch/04_breast_cancer_dataloader.ipynb) |
+| [Breast cancer ann](notebooks/03_frameworks/pytorch/05_breast_cancer_ann.ipynb) |
+| [Nn module tabular](notebooks/03_frameworks/pytorch/06_nn_module_tabular.ipynb) |
+| [Convolution on matrices](notebooks/04_deep_learning/00_convolution_on_matrices.ipynb) |
+| [Cifar cnn pytorch tensorflow](notebooks/04_deep_learning/01_cifar_cnn_pytorch_tensorflow.ipynb) |
+| [Lenet5 tf](notebooks/04_deep_learning/02_lenet5_tf.ipynb) |
+| [Fashion mnist pytorch](notebooks/04_deep_learning/03_fashion_mnist_pytorch.ipynb) |
+| [Resnet50 classification pytorch](notebooks/04_deep_learning/04_resnet50_classification_pytorch.ipynb) |
+| [Penguin turtle basic tf](notebooks/04_deep_learning/05_penguin_turtle_basic_tf.ipynb) |
+| [Penguin turtle extended tf](notebooks/04_deep_learning/06_penguin_turtle_extended_tf.ipynb) |
+| [Vgg16 feature extraction tf](notebooks/04_deep_learning/07_vgg16_feature_extraction_tf.ipynb) |
+| [Optuna pytorch](notebooks/05_tuning/01_optuna_pytorch.ipynb) |
+| [Neuron count comparison pytorch](notebooks/05_tuning/02_neuron_count_comparison_pytorch.ipynb) |
+
+## Author
+
+Muhammad Huzifa — [GitHub](https://github.com/Muhammad-Huzifa)
